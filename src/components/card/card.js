@@ -1,8 +1,13 @@
 
-export function Card() {
+export function Card({movie}) {
 
     return(
-        <div>Movie card</div>
+        <div>
+        <h2>{movie.title}</h2>
+        <p>{movie.description}</p>
+        <span>{movie.director}</span>
+        <span>{movie.likes}</span>
+        </div>
     )
 }
 
