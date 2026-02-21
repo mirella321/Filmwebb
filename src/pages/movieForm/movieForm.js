@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './movieForm.css';
 
 export function MovieForm() {
   const [formData, setFormData] = useState({
@@ -47,7 +48,7 @@ export function MovieForm() {
     <>
       <h1>ADD MOVIE</h1>
 
-      <form onSubmit={handleSubmit}>
+      <form className="movie-form" onSubmit={handleSubmit}>
         <input
           placeholder="title"
           type="text"
